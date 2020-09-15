@@ -44,7 +44,8 @@ namespace BooksAPI
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                                   builder =>
                                   {
-                                      builder.WithOrigins("http://localhost:3000")
+                                      builder.WithOrigins("http://localhost:3000",
+                                                            "https://react-look4books.azurewebsites.net")
                                                             .AllowAnyHeader()
                                                             .AllowAnyMethod();
                                   });
