@@ -21,7 +21,7 @@ function Books(props: IBooksProps) {
             console.log(res.items)
             setItemArray(res.items);
         })
-        .catch(() => console.log("It didn't work!")
+        .catch(() => console.log("Nothing worked!!")
         );
     }, [props.SearchQuery]);
 
