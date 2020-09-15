@@ -11,6 +11,7 @@ function Books(props: IBooksProps) {
 
     //API key
     const API_Key = process.env.REACT_APP_API_KEY;
+    console.log(process.env.REACT_APP_API_KEY)
     const [ItemArray, setItemArray] = useState([]);
 
     useEffect(() => {
