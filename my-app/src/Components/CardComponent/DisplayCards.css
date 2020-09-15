@@ -7,13 +7,17 @@
     max-width: 310px;
 }
 .CardContent{
-    height: 150px;
+    height: 160px;
     overflow-wrap: break-word;
 }
 
 .CardButtons {
     margin:10px;
     display:flex;
+}
+
+.BookInfoContainer {
+    margin: 15px;
 }
 
 .MoreButtonContainer {

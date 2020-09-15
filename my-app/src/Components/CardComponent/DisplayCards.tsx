@@ -37,12 +37,14 @@ function DisplayCard(props: IDisplayCardProps) {
                         <Typography variant ="subtitle1">
                             {props.BookTitle}
                         </Typography>
-                        <Typography variant = "body2">
-                            Author: {props.Author}
-                        </Typography>
-                        <Typography variant = "body2">
-                            Published: {props.PublishedDate}
-                        </Typography>
+                        <div className = "BookInfoContainer">
+                            <Typography variant = "body2">
+                                Author: {props.Author}
+                            </Typography>
+                            <Typography variant = "body2">
+                                Published: {props.PublishedDate}
+                            </Typography>
+                        </div>
                     </CardContent>
                     <CardActions className ="CardButtons">
                         <IconButton id="ShareButton" aria-label="share"><ShareIcon/></IconButton>
