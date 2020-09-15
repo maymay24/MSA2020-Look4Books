@@ -1,0 +1,14 @@
+.SearchBarContainer {
+    margin: auto;
+    margin: 50px;
+}
+
+/* .MuiGrid-root div{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+} */
+
+.TextField {
+    width: 500px;
+}

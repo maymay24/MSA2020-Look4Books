@@ -1,0 +1,30 @@
+.CardContainer{
+    max-width: 310px;
+    margin: auto;
+}
+.CardImage{
+    height: 200px !important;
+    max-width: 310px;
+}
+.CardContent{
+    height: 120px;
+    overflow-wrap: break-word;
+}
+
+.CardButtons {
+    margin:10px;
+    display:flex;
+}
+
+.MoreButtonContainer {
+    display:flex;
+    float:right;
+    margin-top:5px;
+    margin-right:20px;
+}
+
+#ShareButton {
+    float: left;
+    margin-left: 20px;
+    padding-bottom: 20px;
+} 

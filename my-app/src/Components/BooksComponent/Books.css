@@ -1,0 +1,10 @@
+.DisplayGridCard {
+    align-content: center;
+    justify-content: center;
+}
+
+.DisplayGridContainer {
+    margin: auto !important;
+    padding: 20px;
+    width: 90% !important;
+}
