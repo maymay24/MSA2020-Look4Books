@@ -34,13 +34,13 @@ function DisplayCard(props: IDisplayCardProps) {
                         image={props.ImageUrl}
                     /> 
                     <CardContent className = "CardContent">
-                        <Typography variant ="h6">
+                        <Typography variant ="subtitle1">
                             {props.BookTitle}
                         </Typography>
-                        <Typography>
+                        <Typography variant = "body2">
                             Author: {props.Author}
                         </Typography>
-                        <Typography>
+                        <Typography variant = "body2">
                             Published: {props.PublishedDate}
                         </Typography>
                     </CardContent>
