@@ -10,7 +10,16 @@ import ShareIcon from '@material-ui/icons/Share';
 import DoubleArrowRoundedIcon from '@material-ui/icons/DoubleArrowRounded';
 import "./DisplayCards.css";
 import { Icon, IconButton } from '@material-ui/core';
+import {createMuiTheme, MuiThemeProvider} from '@material-ui/core';
 
+const fontTheme = createMuiTheme({
+    typography: {
+        "fontSize": 15,
+        subtitle1: {
+            "fontWeight": 600,
+        },
+    },
+});
 
 interface IDisplayCardProps {
     ImageUrl: string | undefined;
@@ -34,9 +43,11 @@ function DisplayCard(props: IDisplayCardProps) {
                         image={props.ImageUrl}
                     /> 
                     <CardContent className = "CardContent">
-                        <Typography variant ="subtitle1">
-                            {props.BookTitle}
-                        </Typography>
+                        <MuiThemeProvider theme={fontTheme}>
+                            <Typography variant ="subtitle1">
+                                {props.BookTitle}
+                            </Typography>
+                        </MuiThemeProvider>
                         <div className = "BookInfoContainer">
                             <Typography variant = "body2">
                                 Author: {props.Author}

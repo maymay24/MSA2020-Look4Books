@@ -9,6 +9,7 @@ namespace BooksAPI.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int bookID { get; set; }
+        [Required, MaxLength(150)]
         public string title { get; set; }
         public string author { get; set; }
         public string publishDate { get; set; }

@@ -40,8 +40,6 @@ function Books(props: IBooksProps) {
             </Grid>)
     }) 
 
-
-
     return(
         <div>
             <Grid container spacing={3} className="DisplayGridContainer">

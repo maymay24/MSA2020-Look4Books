@@ -24,56 +24,53 @@ namespace BooksAPI
         }
 
         public IConfiguration Configuration { get; }
-        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+        private readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            var connection = Configuration.GetConnectionString("sqlDatabase");
-
-            services.AddDbContext<BookContext>(options => options.UseSqlServer(connection));
-
-            services.AddSwaggerGen(c =>
+            services.AddSwaggerGen(options =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Look4Books", Version = "v1" });
+                options.SwaggerDoc(name: "v1", new OpenApiInfo { Title = "Look4Books API", Version = "v1" });
             });
 
             services.AddCors(options =>
             {
                 options.AddPolicy(name: MyAllowSpecificOrigins,
-                                  builder =>
-                                  {
-                                      builder.WithOrigins("http://localhost:3000",
-                                                            "https://react-look4books.azurewebsites.net")
-                                                            .AllowAnyHeader()
-                                                            .AllowAnyMethod();
-                                  });
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:3000",
+                                            "https://react-look4books.azurewebsites.net")
+                                            .AllowAnyHeader()
+                                            .SetIsOriginAllowed((host) => true)
+                                            .AllowAnyMethod();
+                    });
             });
 
+            var connection = Configuration.GetConnectionString("sqlDatabase");
+            services.AddDbContext<BookContext>(options => options.UseSqlServer(connection));
+        
             services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseSwagger();
-            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
-            // specifying the Swagger JSON endpoint.
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Look4Books V1");
-                c.RoutePrefix = string.Empty;
-            });
-
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            app.UseSwagger();
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Look4Books API V1");
+                c.RoutePrefix = string.Empty; // launch swagger from root
+            });
 
-            app.UseCors(MyAllowSpecificOrigins);
+            app.UseHttpsRedirection();
 
             app.UseRouting();
 
