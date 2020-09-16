@@ -30,7 +30,7 @@ namespace BooksAPI.Controllers
         }
 
         // GET: api/Book/5
-        [HttpGet("{id}")]
+        [HttpGet("GetID/{id}")]
         public async Task<ActionResult<Book>> GetBook(int id)
         {
             var book = await _context.Book.FindAsync(id);
