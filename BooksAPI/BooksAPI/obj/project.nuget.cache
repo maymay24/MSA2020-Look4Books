@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ViXG6UrgoTHV1tOYr6qTXtFLEgBCSjbzidTPDXvrH7j8P7+vh0kiaQcqCrv8+DG+YKTPwOiSoTBcTrE+WAUiyA==",
+  "dgSpecHash": "gVbgM9FOX4hrR9rcbjn2WSuQpxD2ytw6T1iHSTBntSOEaagL/c+1ZlmE/UJdQBiBpFtGVhIzfa2AOiCIEHeZHw==",
   "success": true,
   "projectFilePath": "/Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/BooksAPI.csproj",
   "expectedPackageFiles": [
@@ -88,10 +88,10 @@
     "/Users/maychoy/.nuget/packages/sqlitepclraw.core/2.0.2/sqlitepclraw.core.2.0.2.nupkg.sha512",
     "/Users/maychoy/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.0.2/sqlitepclraw.lib.e_sqlite3.2.0.2.nupkg.sha512",
     "/Users/maychoy/.nuget/packages/sqlitepclraw.provider.dynamic_cdecl/2.0.2/sqlitepclraw.provider.dynamic_cdecl.2.0.2.nupkg.sha512",
-    "/Users/maychoy/.nuget/packages/swashbuckle.aspnetcore/5.6.0/swashbuckle.aspnetcore.5.6.0.nupkg.sha512",
-    "/Users/maychoy/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.0/swashbuckle.aspnetcore.swagger.5.6.0.nupkg.sha512",
-    "/Users/maychoy/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.6.0/swashbuckle.aspnetcore.swaggergen.5.6.0.nupkg.sha512",
-    "/Users/maychoy/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.6.0/swashbuckle.aspnetcore.swaggerui.5.6.0.nupkg.sha512",
+    "/Users/maychoy/.nuget/packages/swashbuckle.aspnetcore/5.6.1/swashbuckle.aspnetcore.5.6.1.nupkg.sha512",
+    "/Users/maychoy/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.1/swashbuckle.aspnetcore.swagger.5.6.1.nupkg.sha512",
+    "/Users/maychoy/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.6.1/swashbuckle.aspnetcore.swaggergen.5.6.1.nupkg.sha512",
+    "/Users/maychoy/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.6.1/swashbuckle.aspnetcore.swaggerui.5.6.1.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/system.appcontext/4.3.0/system.appcontext.4.3.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/system.buffers/4.3.0/system.buffers.4.3.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/system.collections/4.3.0/system.collections.4.3.0.nupkg.sha512",

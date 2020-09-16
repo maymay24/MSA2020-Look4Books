@@ -23,33 +23,33 @@ namespace BooksAPI
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
         private readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+        public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSwaggerGen(options =>
-            {
-                options.SwaggerDoc(name: "v1", new OpenApiInfo { Title = "Look4Books API", Version = "v1" });
-            });
-
             services.AddCors(options =>
             {
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                     builder =>
                     {
                         builder.WithOrigins("http://localhost:3000",
-                                            "https://react-look4books.azurewebsites.net")
+                                            "https://api-look4books.azurewebsites.net")
                                             .AllowAnyHeader()
-                                            .SetIsOriginAllowed((host) => true)
                                             .AllowAnyMethod();
                     });
             });
 
-            var connection = Configuration.GetConnectionString("sqlDatabase");
-            services.AddDbContext<BookContext>(options => options.UseSqlServer(connection));
-        
+            services.AddSwaggerGen(option =>
+            {
+                option.SwaggerDoc(name: "v1", new OpenApiInfo { Title = "Look4Books API", Version = "v1" });
+            });
+
+            services.AddDbContext<BookContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("sqlDatabase"))
+            );
+
             services.AddControllers();
         }
 
@@ -66,13 +66,15 @@ namespace BooksAPI
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Look4Books API V1");
-                c.RoutePrefix = string.Empty; // launch swagger from root
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Look4Books API");
+                c.RoutePrefix = string.Empty;
             });
 
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseAuthorization();
 

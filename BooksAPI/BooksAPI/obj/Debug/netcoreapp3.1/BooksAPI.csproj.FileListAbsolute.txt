@@ -31,7 +31,11 @@
 /Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll
 /Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll
+/Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/bin/Debug/netcoreapp3.1/Microsoft.OpenApi.dll
 /Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.Swagger.dll
+/Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
 /Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll
 /Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
@@ -50,6 +54,7 @@
 /Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/obj/Debug/netcoreapp3.1/BooksAPI.AssemblyInfoInputs.cache
 /Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/obj/Debug/netcoreapp3.1/BooksAPI.AssemblyInfo.cs
 /Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/obj/Debug/netcoreapp3.1/BooksAPI.csproj.CoreCompileInputs.cache
+/Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/obj/Debug/netcoreapp3.1/BooksAPI.MvcApplicationPartsAssemblyInfo.cs
 /Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/obj/Debug/netcoreapp3.1/BooksAPI.MvcApplicationPartsAssemblyInfo.cache
 /Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/obj/Debug/netcoreapp3.1/BooksAPI.RazorTargetAssemblyInfo.cache
 /Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/obj/Debug/netcoreapp3.1/BooksAPI.csproj.CopyComplete
@@ -151,8 +156,3 @@
 /Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/e_sqlite3.dll
 /Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
 /Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
-/Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/bin/Debug/netcoreapp3.1/Microsoft.OpenApi.dll
-/Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.Swagger.dll
-/Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerGen.dll
-/Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll
-/Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/obj/Debug/netcoreapp3.1/BooksAPI.MvcApplicationPartsAssemblyInfo.cs

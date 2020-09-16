@@ -4,8 +4,8 @@
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/obj/.store/.stage/h5kfdl5w.gok</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/obj/.store/.stage/h5kfdl5w.gok</NuGetPackageFolders>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/obj/.store/.stage/avfgh0sq.dyq</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/obj/.store/.stage/avfgh0sq.dyq</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">DotnetToolReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.7.0</NuGetToolVersion>
   </PropertyGroup>
@@ -16,6 +16,6 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Pkgdotnet-aspnet-codegenerator Condition=" '$(Pkgdotnet-aspnet-codegenerator)' == '' ">/Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/obj/.store/.stage/h5kfdl5w.gok/dotnet-aspnet-codegenerator/3.1.4</Pkgdotnet-aspnet-codegenerator>
+    <Pkgdotnet-aspnet-codegenerator Condition=" '$(Pkgdotnet-aspnet-codegenerator)' == '' ">/Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/obj/.store/.stage/avfgh0sq.dyq/dotnet-aspnet-codegenerator/3.1.4</Pkgdotnet-aspnet-codegenerator>
   </PropertyGroup>
 </Project>

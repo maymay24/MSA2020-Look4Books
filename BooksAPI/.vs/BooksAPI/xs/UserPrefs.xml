@@ -1,23 +1,21 @@
-﻿<Properties StartupConfiguration="{7E21007D-ECC8-4E7B-ADF4-A456778BA0B6}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BooksAPI/Properties/launchSettings.json">
+﻿<Properties StartupConfiguration="{6C84AF28-C147-46AD-9E51-120C7C914771}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BooksAPI/Startup.cs">
     <Files>
-      <File FileName="BooksAPI/Models/Book.cs" Line="15" Column="34" />
-      <File FileName="BooksAPI/Data/BookContext.cs" Line="32" Column="87" />
-      <File FileName="BooksAPI/Startup.cs" Line="68" Column="74" />
-      <File FileName="BooksAPI/Controllers/BookController.cs" Line="1" Column="1" />
-      <File FileName="BooksAPI/Properties/launchSettings.json" Line="15" Column="28" />
+      <File FileName="BooksAPI/Models/Book.cs" Line="16" Column="6" />
+      <File FileName="BooksAPI/Startup.cs" Line="69" Column="78" />
+      <File FileName="BooksAPI/Properties/launchSettings.json" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BooksAPI" expanded="True">
             <Node name="BooksAPI" expanded="True">
+              <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
+              <Node name="Migrations" expanded="True" />
               <Node name="Models" expanded="True" />
-              <Node name="Properties" expanded="True">
-                <Node name="launchSettings.json" selected="True" />
-              </Node>
-              <Node name="appsettings.json" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>

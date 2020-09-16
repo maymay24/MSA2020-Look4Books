@@ -77,16 +77,16 @@
     ]
   },
   "packageFolders": {
-    "/Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/obj/.store/.stage/h5kfdl5w.gok": {}
+    "/Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/obj/.store/.stage/avfgh0sq.dyq": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/var/folders/s8/x96r3vr937l6j_vhkypp8tgc0000gn/T/xnoju4w5.1a1/restore.csproj",
+      "projectUniqueName": "/var/folders/s8/x96r3vr937l6j_vhkypp8tgc0000gn/T/twql14yh.ysc/restore.csproj",
       "projectName": "restore",
-      "projectPath": "/var/folders/s8/x96r3vr937l6j_vhkypp8tgc0000gn/T/xnoju4w5.1a1/restore.csproj",
-      "packagesPath": "/Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/obj/.store/.stage/h5kfdl5w.gok",
-      "outputPath": "/Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/obj/.store/.stage/h5kfdl5w.gok/",
+      "projectPath": "/var/folders/s8/x96r3vr937l6j_vhkypp8tgc0000gn/T/twql14yh.ysc/restore.csproj",
+      "packagesPath": "/Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/obj/.store/.stage/avfgh0sq.dyq",
+      "outputPath": "/Users/maychoy/Documents/myapp/BooksAPI/BooksAPI/obj/.store/.stage/avfgh0sq.dyq/",
       "projectStyle": "DotnetToolReference",
       "configFilePaths": [
         "/Users/maychoy/.nuget/NuGet/NuGet.Config"
