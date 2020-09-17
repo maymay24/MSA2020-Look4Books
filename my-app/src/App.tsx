@@ -34,12 +34,12 @@ function App() {
   return (
     <div className="App">
       <header className = "App-header">
+        {/*Added custom font for header*/}
         <h1>L</h1>
         <h1 className="o-alphabet">oo</h1>
         <h1>k4Books</h1>
       </header>
       <MuiThemeProvider theme={theme}>
-        
         <SearchBar SetUserInput={(a: IUserInput) => SetUserInput(a)}/>
         <Books SearchQuery={UserInput.SearchQuery}/>
       </MuiThemeProvider>

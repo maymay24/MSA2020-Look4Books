@@ -25,10 +25,12 @@ namespace BooksAPI.Controllers
             _repo = new BookRepository(_context);
         }
 
-        public BookController(IBookRepository repo)
-        {
-            _repo = repo;
-        }
+
+        //!! UNCOMMENT FOR UNIT TEST!!//
+        //public BookController(IBookRepository repo)
+        //{
+        //    _repo = repo;
+        //}
 
 
         // GET: api/Book
