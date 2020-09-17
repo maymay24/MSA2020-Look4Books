@@ -1,11 +1,10 @@
 ﻿<Properties StartupConfiguration="{6C84AF28-C147-46AD-9E51-120C7C914771}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BooksAPI.Tests/UnitTest1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BooksAPI/Startup.cs">
     <Files>
       <File FileName="BooksAPI/Models/Book.cs" Line="16" Column="6" />
       <File FileName="BooksAPI/Startup.cs" Line="39" Column="88" />
       <File FileName="BooksAPI/Controllers/BookController.cs" />
       <File FileName="BooksAPI/Properties/launchSettings.json" />
-      <File FileName="BooksAPI.Tests/UnitTest1.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,9 +17,7 @@
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
             </Node>
-            <Node name="BooksAPI.Tests" expanded="True">
-              <Node name="UnitTest1.cs" selected="True" />
-            </Node>
+            <Node name="BooksAPI.Tests" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>

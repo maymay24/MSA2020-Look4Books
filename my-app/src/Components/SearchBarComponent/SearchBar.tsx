@@ -45,7 +45,7 @@ function SearchBar(props: ISearchBarProps) {
         </Grid>
         <Grid item xs={12} sm={3}>
                 <Button className = "SubmitButton" style = {{
-                    backgroundColor: "#040E5A",
+                    backgroundColor: "#4154b3",
                     color: "white",
                     width: "130px",
                     height: "50px"
