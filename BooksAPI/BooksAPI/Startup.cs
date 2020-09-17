@@ -35,6 +35,7 @@ namespace BooksAPI
                     builder =>
                     {
                         builder.WithOrigins("http://localhost:3000",
+                                            "https://api-look4books.azurewebsites.net",
                                             "https://react-look4books.azurewebsites.net")
                                             .AllowAnyHeader()
                                             .AllowAnyMethod();
@@ -70,7 +71,7 @@ namespace BooksAPI
                 c.RoutePrefix = string.Empty;
             });
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 
