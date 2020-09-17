@@ -2,16 +2,18 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="BooksAPI/Controllers/BookController.cs">
     <Files>
       <File FileName="BooksAPI/Models/Book.cs" Line="16" Column="6" />
-      <File FileName="BooksAPI/Startup.cs" Line="70" Column="17" />
+      <File FileName="BooksAPI/Startup.cs" />
       <File FileName="BooksAPI/Controllers/BookController.cs" Line="33" Column="22" />
-      <File FileName="BooksAPI/Properties/launchSettings.json" Line="15" Column="21" />
+      <File FileName="BooksAPI/Properties/launchSettings.json" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BooksAPI" expanded="True">
-            <Node name="BooksAPI" expanded="True" selected="True">
-              <Node name="Controllers" expanded="True" />
+            <Node name="BooksAPI" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="BookController.cs" selected="True" />
+              </Node>
               <Node name="Data" expanded="True" />
               <Node name="Migrations" expanded="True" />
               <Node name="Models" expanded="True" />
