@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BooksAPI.Data;
 using BooksAPI.Models;
+using BooksAPI.Interfaces;
+using BooksAPI.Repository;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace BooksAPI.Controllers
 {
@@ -15,11 +18,18 @@ namespace BooksAPI.Controllers
     public class BookController : ControllerBase
     {
         private readonly BookContext _context;
-
+        private readonly IBookRepository _repo;
         public BookController(BookContext context)
         {
             _context = context;
+            _repo = new BookRepository(_context);
         }
+
+        public BookController(IBookRepository repo)
+        {
+            _repo = repo;
+        }
+
 
         // GET: api/Book
         [HttpGet]
@@ -107,6 +117,18 @@ namespace BooksAPI.Controllers
         private bool BookExists(int id)
         {
             return _context.Book.Any(e => e.bookID == id);
+        }
+
+        [HttpGet("title(for_unit_test)/{id}")]
+        public ActionResult<string> GetBookWithTitle(int id)
+        {
+            var book = _repo.GetBookByID(id);
+            if (book == null)
+            {
+                return NotFound();
+            }
+            var title = _repo.GetBookTitle(book.title);
+            return title;
         }
     }
 }
