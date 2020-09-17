@@ -1,17 +1,18 @@
 import React, {useState, useEffect} from 'react';
 import DisplayCard from "../CardComponent/DisplayCards";
-import {Grid} from "@material-ui/core";
+import {Grid, Typography} from "@material-ui/core";
 import "./Books.css";
 
 const API_BASE_URL = "https://api-look4books.azurewebsites.net/api/Book/";
 const GET_BOOK_URL = API_BASE_URL + "GetBook";
+
+
 
 interface IBooksProps {
     SearchQuery: (string | null);
 }
 
 function Books(props: IBooksProps) {
-
     //API key
     const API_Key = process.env.REACT_APP_API_KEY;
     const [ItemArray, setItemArray] = useState([]);
@@ -37,18 +38,6 @@ function Books(props: IBooksProps) {
     },[]);
 
     var Cards: JSX.Element[] = [];
-    apiItemArray.forEach((element, i: Number) => {
-        Cards.push(
-            <Grid key={"card_"+i} item sm={6} md={4} lg={3} className="DisplayGridCard">
-                <DisplayCard ImageUrl={""} 
-                    BookTitle={element["title"]} 
-                    Author={element["author"]} 
-                    BookLink={""} 
-                    PublishedDate={element["publishDate"]}/>
-            </Grid>)
-    })
-
-    //var Cards: JSX.Element[] = [];
     ItemArray.forEach((el, i: Number) => {
         if(!el || !(el["volumeInfo"]["imageLinks"]) || !(el["volumeInfo"]["authors"]) || !(el["volumeInfo"]["previewLink"]) || !(el["volumeInfo"]["publishedDate"])) {
             return null;
@@ -64,9 +53,22 @@ function Books(props: IBooksProps) {
             </Grid>)
     }) 
 
+    
+    apiItemArray.forEach((element, i: Number) => {
+        Cards.push(
+            <Grid key={"card_"+i} item sm={6} md={4} lg={3} className="DisplayGridCard">
+                <DisplayCard ImageUrl={"../no_image.png"} 
+                    BookTitle={element["title"]} 
+                    Author={element["author"]} 
+                    BookLink={""} 
+                    PublishedDate={element["publishDate"]}/>
+            </Grid>)
+    })
+
     return(
+        
         <div>
-            <Grid container spacing={3} className="DisplayGridContainer">
+            <Grid container spacing={2} className="DisplayGridContainer">
                 {Cards}
             </Grid>
         </div>

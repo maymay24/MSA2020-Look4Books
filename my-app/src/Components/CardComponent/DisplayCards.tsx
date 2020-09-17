@@ -76,5 +76,3 @@ function DisplayCard(props: IDisplayCardProps) {
 export default DisplayCard;
 
  
-
-// <Icon id ="MoreButton" color="primary" aria-label="double-arrow-rounded"><DoubleArrowRoundedIcon/></Icon>

@@ -3,8 +3,7 @@ import './App.css';
 import { IUserInput } from './Interfaces/Interfaces';
 import SearchBar from "./Components/SearchBarComponent/SearchBar";
 import Books from "./Components/BooksComponent/Books";
-import {createMuiTheme, MuiThemeProvider} from '@material-ui/core';
-
+import {Button, createMuiTheme, MuiThemeProvider} from '@material-ui/core';
 
 const theme = createMuiTheme({
   breakpoints: {
@@ -39,6 +38,7 @@ function App() {
         <SearchBar SetUserInput={(a: IUserInput) => SetUserInput(a)}/>
         <Books SearchQuery={UserInput.SearchQuery}/>
       </MuiThemeProvider>
+      
     </div>
   );
 }
