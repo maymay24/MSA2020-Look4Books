@@ -5,6 +5,7 @@ import SearchBar from "./Components/SearchBarComponent/SearchBar";
 import Books from "./Components/BooksComponent/Books";
 import {Button, createMuiTheme, MuiThemeProvider} from '@material-ui/core';
 
+
 const theme = createMuiTheme({
   breakpoints: {
     values: {
@@ -19,6 +20,7 @@ const theme = createMuiTheme({
 
 
 function App() {
+  document.title="Look4Books"
 
   const [UserInput, setUserInput] = useState<IUserInput>({
     //Default search query
@@ -27,14 +29,17 @@ function App() {
   function SetUserInput(a: IUserInput) {
     setUserInput(a);    
   }
-
+  
 
   return (
     <div className="App">
       <header className = "App-header">
-        <h1 className="App-title">Look4Books</h1>
+        <h1>L</h1>
+        <h1 className="o-alphabet">oo</h1>
+        <h1>k4Books</h1>
       </header>
       <MuiThemeProvider theme={theme}>
+        
         <SearchBar SetUserInput={(a: IUserInput) => SetUserInput(a)}/>
         <Books SearchQuery={UserInput.SearchQuery}/>
       </MuiThemeProvider>

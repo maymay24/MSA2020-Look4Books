@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import "./web.config";
-import {BrowserRouter} from "react-router-dom";
+import "./Fonts/Peeps-V4Yy.ttf";
 
 ReactDOM.render(
   <React.StrictMode>

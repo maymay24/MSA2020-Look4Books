@@ -30,7 +30,7 @@ function SearchBar(props: ISearchBarProps) {
 
     return <div className="SearchBarContainer">
     <Grid container spacing={3} justify="center" align-items="center">
-        <Grid item xs={6} sm={3}>
+        <Grid item xs={12} sm={3}>
             <TextField className = "TextField"
                 required
                 id="outlined-required"
@@ -43,8 +43,8 @@ function SearchBar(props: ISearchBarProps) {
             />
         
         </Grid>
-        <Grid item xs={6} sm={3}>
-                <Button style = {{
+        <Grid item xs={12} sm={3}>
+                <Button className = "SubmitButton" style = {{
                     backgroundColor: "#040E5A",
                     color: "white",
                     width: "130px",

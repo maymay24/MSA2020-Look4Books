@@ -6,18 +6,26 @@
   pointer-events: none;
 }
 
+
+.o-alphabet {
+  font-family: KBGoogleyEyes;
+  font-size: 4.5rem;
+  color:black;
+  padding: 0px;
+}
+
+
 .App-header {
-  background-color: #040E5A;
+  background-color: #fafafa;
   min-height: 30px;
   margin-bottom: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 25px;
-  color: white;
+  font-size: 35px;
+  color: black;
 }
 
 .App-link {
   color: #61dafb;
 }
-
